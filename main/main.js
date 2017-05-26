@@ -1,17 +1,9 @@
 module.exports = function main() {
     let sequence = new Sequence([6, 9, 15, -2, 92, 11]);
     console.log(`o) 最小值 = ${sequence.minimum()}
-// Write your code here
-`);
-    console.log(`o) 最大值 = ${sequence.maxnum()}
-// Write your code here
-`);
-    console.log(`o) 元素数量 = ${sequence.size()}
-// Write your code here
-`);
-    console.log(`o) 平均值 = ${sequence.avg()}
-// Write your code here
-`);
+o) 最大值 = ${sequence.maxnum()}
+o) 元素数量 = ${sequence.size()}
+o) 平均值 = ${sequence.avg()}`);
 };
 
 class Sequence {
@@ -31,7 +23,7 @@ class Sequence {
   maxnum(){
 	let array = this.input
 	array.sort();
-    return array[input.length-1];
+    return array[array.length-1];
   }
   size(){
   	let array = this.input
