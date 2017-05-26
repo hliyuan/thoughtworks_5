@@ -17,30 +17,28 @@ module.exports = function main() {
 class Sequence {
   constructor(input) {
     // Write your code here
-    var array = new Array();
-    array.push(input);
-    return array;
+    this.input = input;
   }
 
-  this.minimum()=function(){
+  minimum()=function(){
     // Write your code here
-    array.sort();
-    return array[0];
+    input.sort();
+    return input[0];
   }
 
   // Write your code here
-  this.maxnum()=function{
-	array.sort();
-    return array[array.length-1];
+  maxnum()=function{
+	input.sort();
+    return input[input.length-1];
   }
-  this.size()=function{
-  	return array.length;
+  size()=function{
+  	return input.length;
   }
-  this.avg()=function{
+  avg()=function{
   	var sum = 0;
-  	for (var i = 0; i < array.length; i++) {
-  		sum += array[i]
+  	for (var i = 0; i < input.length; i++) {
+  		sum += input[i]
   	}
-  	return (sum/array.length).toFixed(2);
+  	return (sum/input.length).toFixed(2);
   }
 }
