@@ -20,25 +20,26 @@ class Sequence {
     this.input = input;
   }
 
-  minimum()=function(){
+  minimum(){
     // Write your code here
-    input.sort();
-    return input[0];
+    let array = this.input.sort();
+    return array[0];
   }
 
   // Write your code here
-  maxnum()=function{
-	input.sort();
+  maxnum(){
+	let array = this.input.sort();
     return input[input.length-1];
   }
-  size()=function{
+  size(){
   	return input.length;
   }
-  avg()=function{
+  avg(){
   	var sum = 0;
-  	for (var i = 0; i < input.length; i++) {
-  		sum += input[i]
+  	let array = this.input;
+  	for (var i = 0; i < array.length; i++) {
+  		sum += array[i]
   	}
-  	return (sum/input.length).toFixed(2);
+  	return (sum/array.length).toFixed(2);
   }
 }
