@@ -29,11 +29,13 @@ class Sequence {
 
   // Write your code here
   maxnum(){
-	let array = this.input.sort();
+	let array = this.input
+	array.sort();
     return input[input.length-1];
   }
   size(){
-  	return input.length;
+  	let array = this.input
+  	return array.length;
   }
   avg(){
   	var sum = 0;
