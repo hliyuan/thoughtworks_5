@@ -22,21 +22,21 @@ class Sequence {
     return array;
   }
 
-  minimum()=function(){
+  this.minimum()=function(){
     // Write your code here
     array.sort();
     return array[0];
   }
 
   // Write your code here
-  maxnum()=function{
+  this.maxnum()=function{
 	array.sort();
     return array[array.length-1];
   }
-  size()=function{
+  this.size()=function{
   	return array.length;
   }
-  avg()=function{
+  this.avg()=function{
   	var sum = 0;
   	for (var i = 0; i < array.length; i++) {
   		sum += array[i]
