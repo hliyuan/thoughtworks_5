@@ -31,7 +31,7 @@ class Sequence {
   maxnum(){
 	let array = this.input
 	array.sort();
-    return input[input.length-1];
+    return array[input.length-1];
   }
   size(){
   	let array = this.input
