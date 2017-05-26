@@ -22,7 +22,8 @@ class Sequence {
 
   minimum(){
     // Write your code here
-    let array = this.input.sort();
+    let array = this.input;
+    array.sort();
     return array[0];
   }
 
